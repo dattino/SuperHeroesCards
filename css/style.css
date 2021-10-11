@@ -3,7 +3,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0px;
 }
     .Promos{
     height: 38px;
@@ -16,6 +16,10 @@
     .Titulo{
         background:rgba(0, 102, 159, 1);
         height: 101px;
+        position: -webkit-sticky;
+        position: sticky;
+            top: 0px;
+        z-index: 1;
     }
         .Titulo h1{
             font-size: 40px;
@@ -25,12 +29,13 @@
         }
     .card{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
         .Carta{
             background: rgba(243, 243, 243, 1);
             width: 300px;
             margin-top: 180px;
+            position: relative;
         }
             .portada_bat{
                 background: url(../img/portada_batman.png);
@@ -39,6 +44,9 @@
             }
                 .portada_bat img{
                     width: 30px;
+                    position: absolute;
+                        left: 21px;
+                        top: 16px;
                 }
             .portada_har{
                 background: url(../img/portada_harleyqueen.png);
@@ -47,8 +55,14 @@
             }
                 .portada_har img{
                     width: 30px;
+                    position: absolute;
+                        left: 21px;
+                        top: 16px;
                 }
             .foto_perfil{
+                position: absolute;
+                    left: 90px;
+                    top: 128px;
                 text-align: center;
                 padding-top: -30PX;
             }
@@ -59,7 +73,7 @@
             .info{
                 height: 336px;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                padding: 10px;
+                padding: 74px 17px;
             }
                 .info h2{
                     text-transform: uppercase;
@@ -70,14 +84,16 @@
                 }
                 .info p{
                     font-size: 16px;
-                    line-height: 19px;
-                    padding-top: 40px;
+                    padding-top: 10px;
                 }
                 .info button{
+                    margin-top: 37px;
                     background: rgba(0, 102, 159, 1);
                     height: 48.52px;
                     width: 128.78px;
-                    padding-bottom: 10px;
+                    position: absolute;
+                        bottom: 10px;
+                        left: 85px;
                 }
                 .info button a{
                     color: rgba(243, 243, 243, 1);
@@ -85,6 +101,7 @@
                     font-size: 15px;
                 }
 footer{
+    margin-top: 150px;
     height: 51px;
     background: rgba(0, 102, 159, 1);   
 }
